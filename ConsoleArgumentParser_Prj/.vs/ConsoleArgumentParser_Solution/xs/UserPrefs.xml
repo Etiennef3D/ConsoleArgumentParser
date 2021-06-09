@@ -1,16 +1,16 @@
 ﻿<Properties StartupConfiguration="{6C5C4E8D-D141-4AEE-ABEA-AE4C7BD4F77E}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="src/ArgumentParser.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Example.cs">
     <Files>
-      <File FileName="src/ArgumentParser.cs" Line="34" Column="79" />
+      <File FileName="src/ArgumentParser.cs" Line="11" Column="40" />
+      <File FileName="Example.cs" Line="14" Column="15" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="ConsoleArgumentParser_Solution" expanded="True">
             <Node name="ConsoleArgumentParser_Prj" expanded="True">
-              <Node name="src" expanded="True">
-                <Node name="ArgumentParser.cs" selected="True" />
-              </Node>
+              <Node name="src" expanded="True" />
+              <Node name="Example.cs" selected="True" />
             </Node>
           </Node>
         </State>

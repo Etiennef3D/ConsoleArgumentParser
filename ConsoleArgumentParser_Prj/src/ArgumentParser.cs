@@ -3,6 +3,14 @@ using System.Collections.Generic;
 
 namespace ConsoleArgumentParser.src
 {
+    /// <summary>
+    /// Main class of this little program.
+    /// It makes sure that arguments are easy to add,
+    /// and also check if they exists before they are invoked.
+    /// Mostly works with Action/Anonymous method for simplicity.
+    /// <para>Just add some arguments, parse,
+    /// then it's done !</para>
+    /// </summary>
     public class ArgumentParser
     {
         private Dictionary<string, Action> _actions = new Dictionary<string, Action>();
@@ -53,7 +61,7 @@ namespace ConsoleArgumentParser.src
         /// </summary>
         /// <param name="_key"></param>
         /// <returns></returns>
-        private bool IsValueExists(string _key) => _actions.TryGetValue(_key, out Action _invocation) ? true : false;
+        private bool IsValueExists(string _key) => _actions.TryGetValue(_key, out Action _invocation);
 
 
         /// <summary>
@@ -63,11 +71,9 @@ namespace ConsoleArgumentParser.src
         {
             foreach (string _s in _args)
             {
+                //Execute existing action
                 if (IsValueExists(_s))
-                {
-                    //Execute existing action
                     _actions[_s]();
-                }
             }
         }
     }
