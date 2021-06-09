@@ -1,0 +1,12 @@
+/Users/Etienne/Desktop/Programs/ConsoleArgumentParser/ConsoleArgumentParser_Prj/bin/Debug/netcoreapp3.1/ConsoleArgumentParser_Prj.deps.json
+/Users/Etienne/Desktop/Programs/ConsoleArgumentParser/ConsoleArgumentParser_Prj/bin/Debug/netcoreapp3.1/ConsoleArgumentParser_Prj.runtimeconfig.json
+/Users/Etienne/Desktop/Programs/ConsoleArgumentParser/ConsoleArgumentParser_Prj/bin/Debug/netcoreapp3.1/ConsoleArgumentParser_Prj.runtimeconfig.dev.json
+/Users/Etienne/Desktop/Programs/ConsoleArgumentParser/ConsoleArgumentParser_Prj/bin/Debug/netcoreapp3.1/ConsoleArgumentParser_Prj.dll
+/Users/Etienne/Desktop/Programs/ConsoleArgumentParser/ConsoleArgumentParser_Prj/bin/Debug/netcoreapp3.1/ConsoleArgumentParser_Prj.pdb
+/Users/Etienne/Desktop/Programs/ConsoleArgumentParser/ConsoleArgumentParser_Prj/obj/Debug/netcoreapp3.1/ConsoleArgumentParser_Prj.csprojAssemblyReference.cache
+/Users/Etienne/Desktop/Programs/ConsoleArgumentParser/ConsoleArgumentParser_Prj/obj/Debug/netcoreapp3.1/ConsoleArgumentParser_Prj.AssemblyInfoInputs.cache
+/Users/Etienne/Desktop/Programs/ConsoleArgumentParser/ConsoleArgumentParser_Prj/obj/Debug/netcoreapp3.1/ConsoleArgumentParser_Prj.AssemblyInfo.cs
+/Users/Etienne/Desktop/Programs/ConsoleArgumentParser/ConsoleArgumentParser_Prj/obj/Debug/netcoreapp3.1/ConsoleArgumentParser_Prj.csproj.CoreCompileInputs.cache
+/Users/Etienne/Desktop/Programs/ConsoleArgumentParser/ConsoleArgumentParser_Prj/obj/Debug/netcoreapp3.1/ConsoleArgumentParser_Prj.dll
+/Users/Etienne/Desktop/Programs/ConsoleArgumentParser/ConsoleArgumentParser_Prj/obj/Debug/netcoreapp3.1/ConsoleArgumentParser_Prj.pdb
+/Users/Etienne/Desktop/Programs/ConsoleArgumentParser/ConsoleArgumentParser_Prj/obj/Debug/netcoreapp3.1/ConsoleArgumentParser_Prj.genruntimeconfig.cache
