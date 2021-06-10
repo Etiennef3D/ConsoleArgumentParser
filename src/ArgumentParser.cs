@@ -41,6 +41,7 @@ namespace ConsoleArgumentParser.src
         /// <summary>
         /// Check if the incoming string has the right format we want.
         /// Check according to CompareCheck enum options if the value correspond to the right format.
+        /// Out value is used to get the parsed value in the wanted format.
         /// </summary>
         /// <param name="_value">The value we want to be tested</param>
         /// <param name="_comparer">The comparer in the good format</param>
@@ -134,6 +135,10 @@ namespace ConsoleArgumentParser.src
         /// Use character length if you wan't to test the exact same number of character
         /// </summary>
         Length = 0,
+
+        /// <summary>
+        /// Check if the out keyword is of the same type 
+        /// </summary>
         Type = 1,
     }
 }
