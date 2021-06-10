@@ -15,7 +15,7 @@ namespace ConsoleArgumentParser.src
     {
         private static Dictionary<string, Action> _actions = new Dictionary<string, Action>();
 
-        public static bool IsValid { get; set; }
+        public static bool IsValid = true;
 
         /// <summary>
         /// Adding an argument to invoke it later. You can register any string you need.
@@ -45,6 +45,8 @@ namespace ConsoleArgumentParser.src
         /// <param name="_comparer">The comparer in the good format</param>
         public static void CheckArgumentFormat(string _value, string _comparer, ComparerCheck[] _checks = null)
         {
+            if (!IsValid) Console.WriteLine("Can't check argument format. Previous parsing is not valid.");
+
             if(_checks != null)
             {
                 foreach(ComparerCheck _comp in _checks)
@@ -53,7 +55,7 @@ namespace ConsoleArgumentParser.src
                     {
                         Console.WriteLine("Character length does not match.");
                         IsValid = false;
-                        return;
+                        break;
                     }
                 }
             }
