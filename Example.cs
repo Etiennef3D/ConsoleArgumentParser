@@ -17,7 +17,6 @@ namespace ConsoleArgumentParser
 
             //Finally parse
             ArgumentParser.Parse(args);
-            //Test
         }
 
         private static void RemoveVerbosity() => Console.SetOut(TextWriter.Null);
