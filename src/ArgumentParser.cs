@@ -11,16 +11,15 @@ namespace ConsoleArgumentParser.src
     /// <para>Just add some arguments, parse,
     /// then it's done !</para>
     /// </summary>
-    public class ArgumentParser
+    public static class ArgumentParser
     {
-        private Dictionary<string, Action> _actions = new Dictionary<string, Action>();
+        private static Dictionary<string, Action> _actions = new Dictionary<string, Action>();
 
-        public ArgumentParser() { }
 
         /// <summary>
         /// Adding an argument to invoke it later. You can register any string you need.
         /// </summary>
-        public void AddArgument(string _initiator, Action _invocation)
+        public static void AddArgument(string _initiator, Action _invocation)
         {
             //Checking if argument is not already set
             //If so set it an action
@@ -42,7 +41,7 @@ namespace ConsoleArgumentParser.src
         /// If you want to remove an argument for whatever reason.
         /// </summary>
         /// <param name="_initiatorKey"></param>
-        public void RemoveArgument(string _initiatorKey)
+        public static void RemoveArgument(string _initiatorKey)
         {
             if (IsValueExists(_initiatorKey))
             {
@@ -61,13 +60,13 @@ namespace ConsoleArgumentParser.src
         /// </summary>
         /// <param name="_key"></param>
         /// <returns></returns>
-        private bool IsValueExists(string _key) => _actions.TryGetValue(_key, out Action _invocation);
+        private static bool IsValueExists(string _key) => _actions.TryGetValue(_key, out Action _invocation);
 
 
         /// <summary>
         /// Check if the key value exists before invoking its value.
         /// </summary>
-        public void Parse(string[] _args)
+        public static void Parse(string[] _args)
         {
             foreach (string _s in _args)
             {
