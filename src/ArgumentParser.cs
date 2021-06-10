@@ -15,6 +15,7 @@ namespace ConsoleArgumentParser.src
     {
         private static Dictionary<string, Action> _actions = new Dictionary<string, Action>();
 
+        public static bool IsValid { get; set; }
 
         /// <summary>
         /// Adding an argument to invoke it later. You can register any string you need.
@@ -36,6 +37,29 @@ namespace ConsoleArgumentParser.src
             }
         }
 
+        /// <summary>
+        /// Check if the incoming string has the right format we want.
+        /// Check according to CompareCheck enum options if the value correspond to the right format.
+        /// </summary>
+        /// <param name="_value">The value we want to be tested</param>
+        /// <param name="_comparer">The comparer in the good format</param>
+        public static void CheckArgumentFormat(string _value, string _comparer, ComparerCheck[] _checks = null)
+        {
+            if(_checks != null)
+            {
+                foreach(ComparerCheck _comp in _checks)
+                {
+                    if(_comp == ComparerCheck.Length && !CompareLength(_value, _comparer))
+                    {
+                        Console.WriteLine("Character length does not match.");
+                        IsValid = false;
+                        return;
+                    }
+                }
+            }
+        }
+
+        private static bool CompareLength(string _v, string _c) =>_v.Length == _c.Length;
 
         /// <summary>
         /// If you want to remove an argument for whatever reason.
@@ -66,7 +90,7 @@ namespace ConsoleArgumentParser.src
         /// <summary>
         /// Check if the key value exists before invoking its value.
         /// </summary>
-        public static void Parse(string[] _args)
+        public static void Execute(string[] _args)
         {
             foreach (string _s in _args)
             {
@@ -75,5 +99,12 @@ namespace ConsoleArgumentParser.src
                     _actions[_s]();
             }
         }
+    }
+    public enum ComparerCheck
+    {
+        /// <summary>
+        /// Use character length if you wan't to test the exact same number of character
+        /// </summary>
+        Length = 0,
     }
 }

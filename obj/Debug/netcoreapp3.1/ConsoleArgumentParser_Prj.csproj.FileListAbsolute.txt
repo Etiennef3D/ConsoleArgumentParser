@@ -1,0 +1,13 @@
+C:\Users\etienne.faivredarcie\Desktop\Imports\ArgumentParser\bin\Debug\netcoreapp3.1\ConsoleArgumentParser_Prj.exe
+C:\Users\etienne.faivredarcie\Desktop\Imports\ArgumentParser\bin\Debug\netcoreapp3.1\ConsoleArgumentParser_Prj.deps.json
+C:\Users\etienne.faivredarcie\Desktop\Imports\ArgumentParser\bin\Debug\netcoreapp3.1\ConsoleArgumentParser_Prj.runtimeconfig.json
+C:\Users\etienne.faivredarcie\Desktop\Imports\ArgumentParser\bin\Debug\netcoreapp3.1\ConsoleArgumentParser_Prj.runtimeconfig.dev.json
+C:\Users\etienne.faivredarcie\Desktop\Imports\ArgumentParser\bin\Debug\netcoreapp3.1\ConsoleArgumentParser_Prj.dll
+C:\Users\etienne.faivredarcie\Desktop\Imports\ArgumentParser\bin\Debug\netcoreapp3.1\ConsoleArgumentParser_Prj.pdb
+C:\Users\etienne.faivredarcie\Desktop\Imports\ArgumentParser\obj\Debug\netcoreapp3.1\ConsoleArgumentParser_Prj.csprojAssemblyReference.cache
+C:\Users\etienne.faivredarcie\Desktop\Imports\ArgumentParser\obj\Debug\netcoreapp3.1\ConsoleArgumentParser_Prj.AssemblyInfoInputs.cache
+C:\Users\etienne.faivredarcie\Desktop\Imports\ArgumentParser\obj\Debug\netcoreapp3.1\ConsoleArgumentParser_Prj.AssemblyInfo.cs
+C:\Users\etienne.faivredarcie\Desktop\Imports\ArgumentParser\obj\Debug\netcoreapp3.1\ConsoleArgumentParser_Prj.csproj.CoreCompileInputs.cache
+C:\Users\etienne.faivredarcie\Desktop\Imports\ArgumentParser\obj\Debug\netcoreapp3.1\ConsoleArgumentParser_Prj.dll
+C:\Users\etienne.faivredarcie\Desktop\Imports\ArgumentParser\obj\Debug\netcoreapp3.1\ConsoleArgumentParser_Prj.pdb
+C:\Users\etienne.faivredarcie\Desktop\Imports\ArgumentParser\obj\Debug\netcoreapp3.1\ConsoleArgumentParser_Prj.genruntimeconfig.cache

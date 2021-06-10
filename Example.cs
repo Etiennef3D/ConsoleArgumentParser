@@ -16,7 +16,7 @@ namespace ConsoleArgumentParser
             ArgumentParser.AddArgument("-v", RemoveVerbosity);
 
             //Finally parse
-            ArgumentParser.Parse(args);
+            ArgumentParser.Execute(args);
         }
 
         private static void RemoveVerbosity() => Console.SetOut(TextWriter.Null);
