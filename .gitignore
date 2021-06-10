@@ -1,3 +1,2 @@
-
-ConsoleArgumentParser/bin/
-ConsoleArgumentParser/debug/
+*.ConsoleArgumentParser/bin/
+*.ConsoleArgumentParser/debug/
