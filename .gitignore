@@ -1,2 +1,3 @@
 *.ConsoleArgumentParser/bin/
 *.ConsoleArgumentParser/debug/
+*.DS_Store
