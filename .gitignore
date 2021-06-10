@@ -1,2 +1,3 @@
-bin/
-debug/
+
+ConsoleArgumentParser/bin/
+ConsoleArgumentParser/debug/
