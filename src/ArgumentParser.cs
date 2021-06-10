@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace ConsoleArgumentParser.src
+namespace ConsoleArgumentParser
 {
     /// <summary>
     /// Main class of this little program.

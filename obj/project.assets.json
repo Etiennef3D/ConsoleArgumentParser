@@ -13,9 +13,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\etienne.faivredarcie\\Desktop\\Imports\\ArgumentParser\\ConsoleArgumentParser_Prj.csproj",
-      "projectName": "ConsoleArgumentParser_Prj",
-      "projectPath": "C:\\Users\\etienne.faivredarcie\\Desktop\\Imports\\ArgumentParser\\ConsoleArgumentParser_Prj.csproj",
+      "projectUniqueName": "C:\\Users\\etienne.faivredarcie\\Desktop\\Imports\\ArgumentParser\\ConsoleArgumentParser.csproj",
+      "projectName": "ConsoleArgumentParser",
+      "projectPath": "C:\\Users\\etienne.faivredarcie\\Desktop\\Imports\\ArgumentParser\\ConsoleArgumentParser.csproj",
       "packagesPath": "C:\\Users\\etienne.faivredarcie\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\etienne.faivredarcie\\Desktop\\Imports\\ArgumentParser\\obj\\",
       "projectStyle": "PackageReference",

@@ -1,6 +1,5 @@
 ﻿using System;
 using System.IO;
-using ConsoleArgumentParser.src;
 
 namespace ConsoleArgumentParser
 {
@@ -21,7 +20,6 @@ namespace ConsoleArgumentParser
             //Testing parameter -v for verbosity
             ArgumentParser.AddArgument("-d", SayHello);
             ArgumentParser.AddArgument("-v", RemoveVerbosity);
-
 
             //We don't want to go further is there is an error
             if (!ArgumentParser.IsValid) return;
