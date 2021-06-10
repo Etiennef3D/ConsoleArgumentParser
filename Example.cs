@@ -9,11 +9,17 @@ namespace ConsoleArgumentParser
         static void Main(string[] args)
         {
             //Just faking arguments for the sake of example.
-            args = new string[] { "-v", "-d" };
+            args = new string[] { "12345", "-v", "-d" };
+
+            //Checking if the first argument we give has the same number of character
+            ArgumentParser.CheckArgumentFormat(args[0], "00000", new ComparerCheck[] { ComparerCheck.Length });
 
             //Testing parameter -v for verbosity
             ArgumentParser.AddArgument("-d", SayHello);
             ArgumentParser.AddArgument("-v", RemoveVerbosity);
+
+            //We don't want to go further is there is an error
+            if (!ArgumentParser.IsValid) return;
 
             //Finally parse
             ArgumentParser.Execute(args);

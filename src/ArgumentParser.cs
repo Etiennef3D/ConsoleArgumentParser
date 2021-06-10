@@ -22,6 +22,7 @@ namespace ConsoleArgumentParser.src
         /// </summary>
         public static void AddArgument(string _initiator, Action _invocation)
         {
+            if (!IsValid) return;
             //Checking if argument is not already set
             //If so set it an action
             if (IsValueExists(_initiator))
