@@ -44,10 +44,8 @@ namespace ConsoleArgumentParser.src
         /// </summary>
         /// <param name="_value">The value we want to be tested</param>
         /// <param name="_comparer">The comparer in the good format</param>
-        public static void CheckArgumentFormat(string _value, string _comparer, ComparerCheck[] _checks = null)
+        public static void CheckArgumentFormat<T>(string _value, string _comparer, out T _valueType, ComparerCheck[] _checks = null)
         {
-            if (!IsValid) Console.WriteLine("Can't check argument format. Previous parsing is not valid.");
-
             if(_checks != null)
             {
                 foreach(ComparerCheck _comp in _checks)
@@ -58,8 +56,29 @@ namespace ConsoleArgumentParser.src
                         IsValid = false;
                         break;
                     }
+                    if (_comp == ComparerCheck.Type && !CompareValueType<T>(_value, out _valueType))
+                    {
+                        Console.WriteLine($"Type not valid. Required format: {typeof(T)}.");
+                        IsValid = false;
+                        break;
+                    }
                 }
             }
+            _valueType = default;
+        }
+
+        private static bool CompareValueType<T>(string _v, out T _valueType)
+        {
+            //Get value type
+            _valueType = _v.ChangeType<T>();
+            if (_valueType is ushort) return ushort.TryParse(_v, out ushort us);
+            if (_valueType is short) return short.TryParse(_v, out short _s);
+            if (_valueType is uint) return uint.TryParse(_v, out uint _ui);
+            if (_valueType is int) return int.TryParse(_v, out int _i);
+            if (_valueType is ulong) return ulong.TryParse(_v, out ulong _ul);
+            if (_valueType is long) return long.TryParse(_v, out long _l);
+            if (_valueType is string) return true;
+            return false;
         }
 
         private static bool CompareLength(string _v, string _c) =>_v.Length == _c.Length;
@@ -95,12 +114,18 @@ namespace ConsoleArgumentParser.src
         /// </summary>
         public static void Execute(string[] _args)
         {
+            Console.WriteLine("Successfully parsed all arguments. Invoking actions.");
             foreach (string _s in _args)
             {
                 //Execute existing action
                 if (IsValueExists(_s))
                     _actions[_s]();
             }
+        }
+
+        public static T ChangeType<T>(this object obj)
+        {
+            return (T)Convert.ChangeType(obj, typeof(T));
         }
     }
     public enum ComparerCheck
@@ -109,5 +134,6 @@ namespace ConsoleArgumentParser.src
         /// Use character length if you wan't to test the exact same number of character
         /// </summary>
         Length = 0,
+        Type = 1,
     }
 }

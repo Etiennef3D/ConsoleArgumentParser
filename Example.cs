@@ -12,7 +12,7 @@ namespace ConsoleArgumentParser
             args = new string[] { "12345", "-v", "-d" };
 
             //Checking if the first argument we give has the same number of character
-            ArgumentParser.CheckArgumentFormat(args[0], "00000", new ComparerCheck[] { ComparerCheck.Length });
+            //ArgumentParser.CheckArgumentFormat(args[0], "00000", new ComparerCheck[] { ComparerCheck.Length });
 
             //Testing parameter -v for verbosity
             ArgumentParser.AddArgument("-d", SayHello);
