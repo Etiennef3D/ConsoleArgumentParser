@@ -12,7 +12,7 @@ namespace ConsoleArgumentParser
             //of course args are send as parameter when the console app
             //is launched
             args = new string[] { "-v", "-d" };
-
+            
             //Just construct it the old way
             ArgumentParser _parser = new ArgumentParser();
 
